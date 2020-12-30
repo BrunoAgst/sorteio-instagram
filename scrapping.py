@@ -23,7 +23,7 @@ def search_winner(url_insta):
     sleep(5)
 
     username = driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input')
-    username.send_keys(os.getenv("USERNAME"))
+    username.send_keys(os.getenv("USERINSTA"))
 
     password = driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[2]/div/label/input')
     password.send_keys(os.getenv("PASSWORD"))
@@ -66,3 +66,5 @@ def search_winner(url_insta):
     winner = random.choice(list_users)
 
     return winner
+
+
